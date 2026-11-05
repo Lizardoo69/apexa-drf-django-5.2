@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ورود به حساب کاربری{% endblock %}
+
+{% block header_class %}header-border-bottom{% endblock %}
+
+{% block content %}
+<!-- about-area -->
+        <section class="login__area-one">
+            <div class="container">
+                <div class="text-center mb-55">
+                    <h1 class="text-48-bold">خوش آمدید !</h1>
+                </div>
+                <div class="box-form-login">
+                    <div class="head-login">
+                        <h3>ورود</h3>
+                        <p>با ایمیل و رمز ورود خود وارد شوید</p>
+                        <div class="box-login-with">
+                            <div class="form-group">
+                                <a href="#" class="btn btn-login-social">
+                                    <img src="{% static 'img/login/google.svg' %}" />
+                                    با Google وارد شوید
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-login-social">
+                                    <img src="{% static 'img/login/apple.png' %}" />
+                                    با Apple ID وارد شوید
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-or"><span>یا</span></div>
+                        <div class="form-login">
+                            <div class="form-group">
+                                <input type="text" class="form-control account" placeholder="آدرس ایمیل" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="رمز عبور" />
+                                <span class="view-password"></span>
+                            </div>
+                            <div class="box-forgot-pass">
+                                <label>
+                                    <input type="checkbox" class="cb-remember" value="1" /> یادآوری
+                                </label>
+                                <a href='/accounts/forgot-password/'>رمز عبور خود را فراموش کردید؟</a>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-login" value="ورود" />
+                            </div>
+                            <p>حساب کاربری ندارید! <a class='link-bold' href='/accounts/register/'>ثبت نام</a> کنید</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+{% endblock content %}

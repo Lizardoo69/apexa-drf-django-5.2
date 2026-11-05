@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}اپکسا - جزئیات پروژه{% endblock %}
+
+{% block content %}
+<!-- breadcrumb-area -->
+        <section class="breadcrumb__area breadcrumb__bg" data-background="{% static 'img/bg/breadcrumb_bg.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="breadcrumb__content">
+                            <h2 class="title">جزئیات پروژه</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href='#'>خانه</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">جزئیات پروژه</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb__shape">
+                <img src="{% static 'img/images/breadcrumb_shape01.png' %}" alt="">
+                <img src="{% static 'img/images/breadcrumb_shape02.png' %}" alt="" class="rightToLeft">
+                <img src="{% static 'img/images/breadcrumb_shape03.png' %}" alt="">
+                <img src="{% static 'img/images/breadcrumb_shape04.png' %}" alt="">
+                <img src="{% static 'img/images/breadcrumb_shape05.png' %}" alt="" class="alltuchtopdown">
+            </div>
+        </section>
+        <!-- breadcrumb-area-end -->
+        <!-- project-details-area -->
+        <section class="project__details-area">
+            <div class="container">
+                <div class="project__details-wrap">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="project__details-top">
+                                <div class="row">
+                                    <div class="col-70">
+                                        <div class="project__details-thumb">
+                                            <img src="{% static 'img/project/project_details01.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-30">
+                                        <div class="project__details-info">
+                                            <h4 class="title">جزئیات پروژه</h4>
+                                            <ul class="list-wrap">
+                                                <li><span>دسته بندی :</span> مشاوره کسب و کار</li>
+                                                <li><span>مشتری :</span>اپل</li>
+                                                <li><span>محل :</span>ایالات متحده آمریکا</li>
+                                                <li><span>ارزش :</span>5 میلیارد تومان</li>
+                                                <li><span>سایت اینترنتی :</span>www.farscod.ir</li>
+                                                <li>
+                                                    <span>اشتراک گذاری :</span>
+                                                    <ul class="list-wrap project-social">
+                                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project__details-content">
+                                <h2 class="title">بزرگترین کمپانی تولید گوشی موبایل</h2>
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                                <p>در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                                <div class="project__details-inner">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6 order-0 order-lg-2">
+                                            <div class="project__details-inner-img">
+                                                <img src="{% static 'img/project/project_details02.jpg' %}" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="project__details-inner-content">
+                                                <h2 class="title">برنامه ریزی تجارت شرکتی ما</h2>
+                                                <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود.</p>
+                                                <div class="content-inner">
+                                                    <div class="graph-img">
+                                                        <img src="{% static 'img/project/graph.jpg' %}" alt="">
+                                                    </div>
+                                                    <div class="about__list-box">
+                                                        <ul class="list-wrap">
+                                                            <li><i class="flaticon-arrow-button"></i>مدیریت حساب شده</li>
+                                                            <li><i class="flaticon-arrow-button"></i>آنالیز کسب و کار</li>
+                                                            <li><i class="flaticon-arrow-button"></i>100% گارانتی بازگشت وجه</li>
+                                                            <li><i class="flaticon-arrow-button"></i>100% ایمن</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p class="last-info">در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project-details-area-end -->
+        <!-- call-back-area -->
+        <section class="call-back-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="call-back-content">
+                            <div class="section-title white-title mb-10">
+                                <h2 class="title">درخواست مشاوره</h2>
+                            </div>
+                            <p>کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری.</p>
+                            <div class="shape">
+                                <img src="{% static 'img/images/call_back_shape.png' %}" alt="" data-aos="fade-right" data-aos-delay="400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="call-back-form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="text" placeholder="نام*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="email" placeholder="ایمیل *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-grp">
+                                            <input type="number" placeholder="شماره تماس*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn">ارسال پیام</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- call-back-area-end -->
+{% endblock content %}

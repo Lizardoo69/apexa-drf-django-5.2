@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ثبت نام{% endblock %}
+
+{% block header_class %}header-border-bottom{% endblock %}
+
+{% block content %}
+<!-- about-area -->
+        <section class="register__area-one">
+            <div class="container">
+                <div class="text-center mb-55">
+                    <h1 class="text-48-bold">ایجاد حساب کاربری</h1>
+                </div>
+                <div class="box-form-login">
+                    <div class="head-login">
+                        <h3>ثبت نام</h3>
+                        <p>امروز یک حساب کاربری ایجاد کنید و استفاده از پلتفرم ما را شروع کنید</p>
+                        <div class="box-login-with">
+                            <div class="form-group">
+                                <a href="#" class="btn btn-login-social">
+                                    <img src="{% static 'img/login/google.svg' %}" />
+                                    ثبت نام با گوگل
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-login-social">
+                                    <img src="{% static 'img/login/apple.png' %}" />
+                                    ثبت نام با اپل آیدی
+                                </a>
+                            </div>
+                        </div>
+                        <div class="text-or"><span>یا</span></div>
+                        <div class="form-login">
+                            <div class="form-group">
+                                <input type="text" class="form-control account" placeholder="نام" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control email-address" placeholder="ایمیل" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control account" placeholder="نام کاربری" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="رمزعبور" />
+                                <span class="view-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="تکرار رمز عبور" />
+                                <span class="view-password"></span>
+                            </div>
+                            <div class="box-forgot-pass">
+                                <label>
+                                    <input type="checkbox" class="cb-remember" value="1" /> <span>من شرایط و ضوابط و خط مشی رازداری این وب سایت را خوانده و موافقم.</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-login" value="ثبت نام" />
+                            </div>
+                            <p>حساب کاربری دارید ؟ <a class='link-bold' href='/accounts/login/'>وارد</a> شوید</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-area-end -->
+{% endblock content %}
